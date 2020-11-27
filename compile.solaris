@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm ./bin/mail-dump.solaris
+/opt/csw/bin/gcc -I/usr/include -I/opt/csw/include -o ./bin/mail-dump.solaris ./src/mail-dump.c /opt/csw/lib/libmilter.a ./src/libsm.a -lpthread -lsocket -lnsl -lresolv
